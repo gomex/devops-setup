@@ -6,7 +6,6 @@ deploy: install
 	sh ./scripts/publish_gitbook.sh
 
 install:
-	docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook yarn 
 	docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook install
 
 serve:
